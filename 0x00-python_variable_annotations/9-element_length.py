@@ -2,12 +2,11 @@
 """
 returns a list of tuples
 """
+from typing import List, Tuple, Sequence, Iterable
 
-from typing import List, Tuple
 
-def element_length(lst: List[str]) -> List[Tuple[str, int]]:
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
     """
-    returns a list of tuples containing
-    an element from the input list along with its length
+    returns a list of tuples
     """
     return [(i, len(i)) for i in lst]
