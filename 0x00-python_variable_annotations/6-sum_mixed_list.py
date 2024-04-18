@@ -9,4 +9,4 @@ def sum_mixed_list(mxd_list: List[Union[int, float]]) -> float:
     """
     Sum of a list with floats and integers
     """
-    return sum(mxs_list)
+    return float(sum(mxd_list))
