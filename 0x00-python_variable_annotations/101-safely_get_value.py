@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-from typing import TypeVar, Dict, Any
-
-K = TypeVar('K')  # Type variable for keys
-V = TypeVar('V')  # Type variable for values
+from typing import TypeVar, Union, Any, Mapping
 
 
-def safely_get_value(dct: Dict[K, V], key: K, default: V = None) -> V:
+K = TypeVar('K')
+Res = Union[Any, K]
+Def = Union[K, None]
+
+
+def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
     """
     Safely gets a value from a dictionary
     """
