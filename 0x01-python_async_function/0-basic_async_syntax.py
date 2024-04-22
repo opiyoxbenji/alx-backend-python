@@ -10,7 +10,6 @@ async def wait_random(max_delay: int = 10) -> float:
     """
     Coroutine that waits for a random delay between 0 and max_delay seconds
     """
-    delay: float = random.random() * max_delay
+    delay = random.random() * max_delay
     await asyncio.sleep(delay)
     return delay
-
