@@ -3,15 +3,9 @@
 Task 1 - Executing multiple coroutines at the sametime with async
 """
 import asyncio
-import random
+import typing from List
 
-async def wait_random(max_delay:int = 10) -> float:
-    """
-    Coroutine that waits for a random delay between 0 and max_delay seconds
-    """
-    delay: float = random.random() * max_delay
-    await asyncio.sleep(delay)
-    return delay
+wait_random = __import__("0-basic_async_syntax").wait_random
 
 async def wait_n(n: int, max_delay: int = 10) -> List[float]:
     """
