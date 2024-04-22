@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Task 0 - The basics of async 
+Task 0: The basics of async
 """
+
 import asyncio
 import random
 
@@ -10,6 +11,6 @@ async def wait_random(max_delay: int = 10) -> float:
     """
     Coroutine that waits for a random delay between 0 and max_delay seconds
     """
-    wait_seconds = random.random() * max_delay
-    await asyncio.sleep(random_seconds)
+    wait_seconds: float = random.random() * max_delay
+    await asyncio.sleep(wait_seconds)
     return wait_seconds
