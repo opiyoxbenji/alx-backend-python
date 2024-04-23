@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""
-Task 1 - async comprehensions
-"""
-import typing
+'''Task 1 - async comprehensions
+'''
 
+import typing
 
 async_generator = __import__('0-async_generator').async_generator
 
