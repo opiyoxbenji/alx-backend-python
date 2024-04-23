@@ -7,7 +7,7 @@ import random
 import typing
 
 
-async def generate_random_numbers():
+async def async_generator():
     for _ in range(10):
         await asyncio.sleep(1)
         yield random.random() * 10
