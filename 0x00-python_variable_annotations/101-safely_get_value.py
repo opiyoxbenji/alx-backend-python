@@ -1,10 +1,10 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 from typing import TypeVar, Union, Any, Mapping
 
 
-K = TypeVar('K')
-Res = Union[Any, K]
-Def = Union[K, None]
+T = TypeVar('T')
+Res = Union[Any, T]
+Def = Union[T, None]
 
 
 def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
